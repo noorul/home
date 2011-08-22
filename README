@@ -1,0 +1,14 @@
+I have been working on linux since 1999. For a linux user his 
+$HOME is very special. Over the time he accumulates useful scripts
+and other settings that improves his productivity.
+
+$HOME usually contains
+
+1. Configuration specific to linux programs stored in dot files.
+   For example .vimrc, .emacs, .inputrc, etc.
+
+2. bin folder which contains useful scripts accumulated over a 
+   period of time.
+
+This project tries to gather all my $HOME stuffs which can be shared.
+ 
