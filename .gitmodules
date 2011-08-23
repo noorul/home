@@ -1,3 +1,0 @@
-[submodule "conf/emacs.d"]
-	path = conf/emacs.d
-	url = git@github.com:noorul/dot-emacs.git
