@@ -42,10 +42,3 @@ cp $BASH/template/bashrc.debian.template.bash $HOME/.bashrc
 
 cp $HOME/.bash_profile $BASH_BACKUP_DIR
 cp $HOME/.bashrc $BASH_BACKUP_DIR
-
-git submodule sync
-git submodule update --init
-
-cd $BASH/conf/emacs.d
-git submodule sync
-git submodule update --init
