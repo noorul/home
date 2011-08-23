@@ -102,6 +102,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export BASH=$HOME/projects/home
+export BASH=$HOME/git/home
 
 source $BASH/bash-setup.sh
