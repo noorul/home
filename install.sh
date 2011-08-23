@@ -11,31 +11,41 @@ mkdir -p $BASH_BACKUP_DIR
 
 for file in $(ls -a $BASH_BACKUP_DIR| grep -v '^.$' | grep -v '^..$')
 do
-    echo rm -rf "$BASH_BACKUP_DIR/$file"
+    rm -rf "$BASH_BACKUP_DIR/$file"
 done
 
 for conf_file in $BASH/conf/*
 do
-    echo mv -f $HOME/.${conf_file##*/} $BASH_BACKUP_DIR
+    mv -f $HOME/.${conf_file##*/} $BASH_BACKUP_DIR
 done
 
 # Install config files
 for conf_file in $BASH/conf/*
 do
-    echo ln -s $conf_file $HOME/.${conf_file##*/}
+    ln -s $conf_file $HOME/.${conf_file##*/}
+done
+
+# Backup private config files
+for conf_file in $(ls -a $DROPBOX_HOME| grep -v '^.$' | grep -v '^..$')
+do
+    mv -f $DROPBOX_HOME/${conf_file##*/} $BASH_BACKUP_DIR
 done
 
 # Install private config files
 for conf_file in $(ls -a $DROPBOX_HOME| grep -v '^.$' | grep -v '^..$')
 do
-    echo ln -s $DROPBOX_HOME/$conf_file $HOME/${conf_file}
+    ln -s $DROPBOX_HOME/$conf_file $HOME
 done
 
-git submodule sync
-git submodule update --init
+cp $BASH/template/bash_profile.debian.template.bash $HOME/.bash_profile
+cp $BASH/template/bashrc.debian.template.bash $HOME/.bashrc
+
+cp $HOME/.bash_profile $BASH_BACKUP_DIR
+cp $HOME/.bashrc $BASH_BACKUP_DIR
+
+#echo git submodule sync
+#echo git submodule update --init
 
 cd $BASH/conf/emacs.d
-git submodule sync
-git submodule update --init
-
-cd $BASH
+#echo git submodule sync
+#echo git submodule update --init
