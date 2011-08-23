@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BASH="$HOME/projects/home"
+BASH="$HOME/git/home"
 cd $BASH
 
 export DROPBOX_HOME=~/Dropbox/home/noorul
@@ -14,13 +14,13 @@ do
     rm -rf "$BASH_BACKUP_DIR/$file"
 done
 
-for conf_file in $BASH/conf/*
+for conf_file in $BASH/configs/*
 do
     mv -f $HOME/.${conf_file##*/} $BASH_BACKUP_DIR
 done
 
 # Install config files
-for conf_file in $BASH/conf/*
+for conf_file in $BASH/configs/*
 do
     ln -s $conf_file $HOME/.${conf_file##*/}
 done
