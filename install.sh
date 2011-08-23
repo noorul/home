@@ -28,7 +28,7 @@ done
 # Backup private config files
 for conf_file in $(ls -a $DROPBOX_HOME| grep -v '^.$' | grep -v '^..$')
 do
-    mv -f $DROPBOX_HOME/${conf_file##*/} $BASH_BACKUP_DIR
+    mv -f $HOME/${conf_file##*/} $BASH_BACKUP_DIR
 done
 
 # Install private config files
