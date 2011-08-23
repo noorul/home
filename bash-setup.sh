@@ -7,6 +7,8 @@ alias reload='source ~/.bash_profile'
 source "${BASH}/themes/colors.theme.bash"
 source "${BASH}/themes/base.theme.bash"
 
+export BASH_THEME=noorul
+
 # Library
 LIB="${BASH}/lib/*.bash"
 for config_file in $LIB
