@@ -5,7 +5,7 @@ cd $BASH
 
 export DROPBOX_HOME=~/Dropbox/home/noorul
 
-# Backup existing conf files
+# Backup existing config files
 export BASH_BACKUP_DIR="/tmp/home"
 mkdir -p $BASH_BACKUP_DIR
 
