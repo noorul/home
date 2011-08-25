@@ -8,6 +8,7 @@ alias ll='ls -al'
 alias l='ls -a'
 alias l1='ls -1'
 alias l.='ls -ad .*'
+alias lg='ls --color=always | grep --color=always -i'
 
 alias _="sudo"
 
