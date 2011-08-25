@@ -3,11 +3,21 @@
 # Reload Library
 alias reload='source ~/.bash_profile'
 
+case "$TERM" in
+    "eterm-color") export EMACS=yes;;
+esac
+
 # Load colors first so they can be use in base theme
 source "${BASH}/themes/colors.theme.bash"
-source "${BASH}/themes/base.theme.bash"
 
-export BASH_THEME=noorul
+if [[ $EMACS ]]; then
+    source "${BASH}/themes/base.emacs.theme.bash"
+    export BASH_THEME=noorul.emacs
+else
+    source "${BASH}/themes/base.theme.bash"
+    export BASH_THEME=noorul
+fi
+
 
 # Library
 LIB="${BASH}/lib/*.bash"
