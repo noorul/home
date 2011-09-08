@@ -5,9 +5,9 @@ alias reload='source ~/.bash_profile'
 
 # Load colors first so they can be use in base theme
 source "${BASH}/themes/colors.theme.bash"
-source "${BASH}/themes/base.theme.bash"
+source "${BASH}/themes/base.ansi.theme.bash"
 
-export BASH_THEME=noorul
+export BASH_THEME=noorul-ansi
 
 # Library
 LIB="${BASH}/lib/*.bash"
