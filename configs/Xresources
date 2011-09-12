@@ -1,6 +1,6 @@
 ! Emacs specific configurations
 Emacs.fontBackend: xft
-Emacs.font: Bitstream Vera Sans Mono-16
+Emacs.font: Bitstream Vera Sans Mono-13
 
 ! XTerm specific configurations
 XTerm.vt100.metaSendsEscape: true
