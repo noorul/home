@@ -103,5 +103,6 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export BASH=$HOME/git/home
+export LEDGER_FILE=~/git/personal/finance/accounts.dat
 
 source $BASH/bash-setup.sh
