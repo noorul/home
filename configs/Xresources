@@ -2,7 +2,7 @@
 Emacs.fontBackend: xft
 Emacs.font: Bitstream Vera Sans Mono-13
 !Emacs.font: Inconsolata-16
-
+!Emacs.font: Inconsolata-18
 ! XTerm specific configurations
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.altSendsEscape: false
