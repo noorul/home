@@ -6,4 +6,5 @@ Emacs.font: Bitstream Vera Sans Mono-13
 ! XTerm specific configurations
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.altSendsEscape: false
-
+!XTerm.vt100.faceName: Bitstream Vera Sans Mono
+!XTerm.vt100.faceSize: 13
