@@ -1,3 +1,5 @@
 [user]
 	name = Noorul Islam K M
 	email = noorul@noorul.com
+[core]
+	excludesfile = /home/noorul/.gitignore_global
