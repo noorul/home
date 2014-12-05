@@ -14,15 +14,15 @@ do
     rm -rf "$BASH_BACKUP_DIR/$file"
 done
 
-for conf_file in $BASH/configs/*
+for conf_file in $(ls -a $BASH/configs | grep -v '^.$' | grep -v '^..$')
 do
-    mv -f $HOME/.${conf_file##*/} $BASH_BACKUP_DIR
+    mv -f $HOME/${conf_file##*/} $BASH_BACKUP_DIR
 done
 
 # Install config files
-for conf_file in $BASH/configs/*
+for conf_file in $(ls -a $BASH/configs | grep -v '^.$' | grep -v '^..$')
 do
-    ln -s $conf_file $HOME/.${conf_file##*/}
+    ln -s $BASH/configs/$conf_file $HOME/${conf_file##*/}
 done
 
 # Backup private config files
