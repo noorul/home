@@ -38,7 +38,7 @@ do
 done
 
 cp $BASH/template/bash_profile.debian.template.bash $HOME/.bash_profile
-cp $BASH/template/bashrc.debian.template.bash $HOME/.bashrc
+cp $BASH/template/bashrc.mac.template.bash $HOME/.bashrc
 
 cp $HOME/.bash_profile $BASH_BACKUP_DIR
 cp $HOME/.bashrc $BASH_BACKUP_DIR
