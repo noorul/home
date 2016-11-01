@@ -104,6 +104,10 @@ fi
 
 PATH=/Applications/Emacs.app/Contents/MacOS/bin-x86_64-10_9:$PATH:/usr/local/bin:/usr/local/sbin
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
 export BASH=$HOME/git/home
 export LEDGER_FILE=~/git/personal/finance/accounts.dat
 export EDITOR=emacsclient
