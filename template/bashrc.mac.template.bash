@@ -114,4 +114,6 @@ export LANG=en_US.UTF-8
 
 eval `keychain --eval id_rsa`
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 source $BASH/bash-setup.sh
