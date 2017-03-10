@@ -1,6 +1,6 @@
 I have been working on linux since 1999. For a linux user his 
-$HOME is very special. Over the time he accumulates useful scripts
-and other settings that improves his productivity.
+$HOME is very special. Over the time I accumulated useful scripts
+and other settings that improves productivity.
 
 $HOME usually contains
 
